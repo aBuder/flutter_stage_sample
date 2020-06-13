@@ -5,9 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Flutter",
+            "name": "Run Production App",
+            "program": "lib/production.dart",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+        },
+        {
+            "name": "Run Stageing App",
+            "program": "lib/stageing.dart",
+            "request": "launch",
+            "type": "dart",
         }
     ]
 }

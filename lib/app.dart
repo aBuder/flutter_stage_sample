@@ -11,8 +11,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Sample App'),
         ),
-        body: Center(
-          child: Text(Configuration.of(context).serverUrl),
+        body: ListView(
+          children: <Widget>[
+            ListTile(
+              title: Text('Server:'),
+              subtitle: Text(GlobalConfiguration().getString('serverUrl')),
+            ),
+            ListTile(
+              title: Text('Version:'),
+              subtitle: Text('${GlobalConfiguration().getInt('version')}'),
+            ),
+          ],
         ),
       ),
     );
