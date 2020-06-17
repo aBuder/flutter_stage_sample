@@ -7,3 +7,4 @@ void main() async {
   GlobalConfiguration().loadStageConfig();
   runApp(MyApp());
 }
+

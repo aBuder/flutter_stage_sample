@@ -5,16 +5,16 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Run Production App",
+            "name": "Production App",
             "program": "lib/production.dart",
             "request": "launch",
             "type": "dart",
         },
         {
-            "name": "Run Stageing App",
+            "name": "Stage App",
             "program": "lib/stageing.dart",
             "request": "launch",
             "type": "dart",
-        }
+        },
     ]
 }
